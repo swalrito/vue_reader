@@ -1,6 +1,6 @@
 # z_reader
 
-> A Vue.js project
+> 前端用vue全家桶、sass、webpack进行构建，后端暂定用nodejs。
 
 ## Build Setup
 
