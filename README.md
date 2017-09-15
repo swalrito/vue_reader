@@ -2,6 +2,11 @@
 
 > 前端用vue全家桶、sass、webpack进行构建，后端暂定用nodejs。
 
+# 正在实现
+>1.引入icon库。    
+>2.构建所有页面路由。    
+>3.完成样式布局。
+
 ## Build Setup
 
 ``` bash
