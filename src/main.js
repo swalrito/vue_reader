@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'lib-flexible'
+import Icon from 'vue-svg-icon/Icon.vue'
+
+Vue.component('icon', Icon);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
