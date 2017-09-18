@@ -31,10 +31,11 @@ $color_gray:#C5C4C4;
 		border-top:1px solid $color_gray;
 		width: 100%;
 		height: 1.5rem;
-		position: fixed;
+		position: absolute;
 		bottom: 0px;
 		left: 0px;
 		right: 0px;
+		background-color: #fff;
 	}
 	.bottom ul{
 		height:1.5rem;

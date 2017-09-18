@@ -1,10 +1,29 @@
 <template>
 	<div class="bookshelf">
 		<top name='书架'></top>
+		<div class="books scroll">
 		<ul class="clearfloat">
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
 			<li class="add"><icon name='add' class='icon' scale='5'></icon></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
 		</ul>
+		</div>
 	</div>
 </template>
 
@@ -23,21 +42,30 @@ $color_gray:#C5C4C4;
 		width: 100%;
 		height: 100%;
 	}
-	.bookshelf ul{
-		padding: 0.53rem;
+	.bookshelf .books{
+		position: absolute;
+		top: 1rem;
+		bottom: 1.5rem;
+		width: 100%;
+		padding: 1rem;
+		overflow-y: scroll;
 	}
-	.bookshelf ul li{
+	.bookshelf .books ul{
+		width: 100%;
+		height: 15.31rem;
+	}
+	.bookshelf .books ul li{
 		float: left;
-		margin: 0.15rem;
+		margin: 0.2rem;
 		border: 1px solid $color_gray;
 		text-align: center;
-		width: 2.13rem;
+		width: 2.2rem;
 		height: 3.2rem;
 	}
-	.bookshelf ul li.add{
+	.bookshelf .books ul li.add{
 		line-height: 4.2rem;
 	}
-	.bookshelf ul li img{
+	.bookshelf .books ul li img{
 		width: 100%;
 		height: 100%;
 		overflow:hidden;

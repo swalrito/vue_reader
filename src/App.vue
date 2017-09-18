@@ -17,6 +17,7 @@ export default {
 
 <style lang='scss'>
 @import'../static/css/reset.css';
+@import'../static/css/public.css';
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
