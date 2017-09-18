@@ -2,19 +2,19 @@
 	<div class="bottom">
 		<ul>
 			<li><router-link to=''>
-				<icon name="bookshelf" scale='4'></icon>
+				<icon name="bookshelf" scale='2.5' ></icon>
 				<p>书架</p>
 			</router-link></li>
 			<li><router-link to=''>
-				<icon name="sort" scale='4'></icon>
+				<icon name="sort" scale='2.5' ></icon>
 				<p>分类</p>
 			</router-link></li>
 			<li><router-link to=''>
-				<icon name="rank" scale='4'></icon>
+				<icon name="rank" scale='2.5' ></icon>
 				<p>排行榜</p>
 			</router-link></li>
 			<li><router-link to=''>
-				<icon name="search" scale='4'></icon>
+				<icon name="search" scale='2.5' ></icon>
 				<p>搜索</p>
 			</router-link></li>
 		</ul>
@@ -43,14 +43,15 @@ $color_gray:#C5C4C4;
 	}
 	.bottom ul li{
 		float: left;
-		padding: 0.28rem;
+		padding: 0.2rem;
 		height: 1.5rem;
+		line-height: 0.4rem;
 		width: 25%;
 		text-align: center;
 	}
 	.bottom ul li a p{
 		font-family: 'SimHei';
-		font-size: 26px;
+		font-size: 18px;
 		color: $color_gray;
 	}
 </style>
