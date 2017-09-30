@@ -1,5 +1,6 @@
 <template>
 	<div class="rank">
+		<top name='排行榜'></top>
 		<div class="man_rank rank_content">
 			男生
 			<ul>
