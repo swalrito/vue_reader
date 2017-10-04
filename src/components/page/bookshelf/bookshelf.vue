@@ -23,15 +23,18 @@
 			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
 			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
 		</ul>
-		</div>
+		</div>    
+		<bottom></bottom>
 	</div>
 </template>
 
 <script type="text/javascript">
 import top from '../../public/top.vue'
+import bottom from '../../public/bottom.vue'
 	export default{
 		components:{
-			top
+			top,
+			bottom
 		}
 	}
 </script>

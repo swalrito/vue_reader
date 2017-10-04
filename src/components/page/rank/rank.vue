@@ -19,14 +19,17 @@
 				<li><router-link to=''><img src="static/img/下载.svg"> 收藏热门榜</router-link></li>
 			</ul>
 		</div>
+    <bottom></bottom>
 	</div>
 </template>
 
 <script type="text/javascript">
 import top from '../../public/top.vue'
+import bottom from '../../public/bottom.vue'
 	export default{
 		components:{
-			top
+			top,
+			bottom
 		}
 	}
 </script>
