@@ -18,7 +18,7 @@ export default new Router({
     {
       name:'sort_detail',
       path:'/sort/details:id',
-      component:()=>import('../components/page/sort_details/sort_details.vue')
+      component:()=>import('../components/page/sort/sort_details.vue')
     },
     {
     	name:'rank',

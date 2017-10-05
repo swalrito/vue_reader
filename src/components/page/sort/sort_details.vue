@@ -1,7 +1,7 @@
 <template>
 	<div class="sort_details">
 		<top name='分类详情'></top>
-		<return></return>
+		<back></back>
 		<nav-bar></nav-bar>
 		<nav-bar></nav-bar>
 		<book-detail></book-detail>
@@ -9,7 +9,7 @@
 </template>
 
 <script type="text/javascript">
-	import return from '../../public/return.vue'
+	import back from '../../public/back.vue'
 	import top from '../../public/top.vue'
 	import navBar from '../../public/details_navbar.vue'
 	import bookDetail from '../../public/book_detail.vue'
@@ -18,7 +18,7 @@
 			top,
 			navBar,
 			bookDetail,
-			return
+			back
 		}
 	}
 </script>

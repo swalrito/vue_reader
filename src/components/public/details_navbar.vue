@@ -1,7 +1,7 @@
 <template>
 	<div class="nav_bar">
 		<ul class="clearfloat">
-			<li>热门</li>
+			<li class='active'>热门</li>
 			<li>热门</li>
 			<li>热门</li>
 			<li>热门</li>
@@ -25,6 +25,9 @@
 	.nav_bar ul li{
 		float: left;
 		margin-left: 0.2rem;
+	}
+	.nav_bar ul li.active{
+		color:#2D2AFF;
 	}
 </style>
 
