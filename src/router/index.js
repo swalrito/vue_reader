@@ -26,6 +26,11 @@ export default new Router({
     	component:()=>import('../components/page/rank/rank.vue')
     },
     {
+      name:'rankList',
+      path:'/rank/rankList/:id',
+      component:()=>import('../components/page/rank/rankList.vue')
+    },
+    {
     	name:'search',
     	path:'/search',
     	component:()=>import('../components/page/search/search.vue')
