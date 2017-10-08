@@ -2,7 +2,7 @@
 	<div class="sort_details">
 		<top name='分类详情'></top>
 		<back></back>
-		<nav-bar></nav-bar>
+		<nav-bar class='first_bar'></nav-bar>
 		<nav-bar></nav-bar>
 		<book-detail></book-detail>
 	</div>
@@ -30,4 +30,7 @@
 		overflow-y: scroll;
 		background-color: #E6E6E6;
 	}
-</style>
+	.first_bar{
+		margin-top: 1rem;
+	}
+	</style>

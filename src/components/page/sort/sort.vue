@@ -59,6 +59,7 @@ import bottom from '../../public/bottom.vue'
 <style type="text/css">
 	.sort_container{
 		padding: 0.53rem;
+		margin-top: 1rem;
 	}
 	.sort_name{
 		font-size: 18px;

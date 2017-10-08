@@ -1,8 +1,6 @@
 <template>
 	<div class="top">
-		<div>
 			<p>{{name}}</p>
-		</div>
 	</div>
 </template>
 
@@ -14,14 +12,18 @@
 
 <style type="text/css" lang='scss'>
 $color_sliver:#B2E3F7;
-	.top div{
+	.top{
+		position: fixed;
+		top: 0px;
+		left: 0px;
 		height: 1rem;
+		margin-bottom: 1rem;
 		line-height: 1rem;
 		text-align: center;
 		width: 100%;
 		background-color: $color_sliver;
 	}
-	.top div p{
+	.top p{
 		font-size: 16px;
 		letter-spacing: 6px;
 	}

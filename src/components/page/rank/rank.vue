@@ -36,7 +36,7 @@ import bottom from '../../public/bottom.vue'
 
 <style type="text/css">
 	.rank_content{
-		margin-top: 0.33rem;
+		margin-top: 1rem;
 		padding: 0.27rem;
 		font-size: 24px;
 		text-align: left;

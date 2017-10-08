@@ -24,6 +24,7 @@
 		height: 1.1rem;
 		background-color: #fff;
 		border-bottom: 1px solid #E0E0E0;
+		margin-top: 1rem;
 	}
 	.ranklist_navbar ul.list{
 		width: 100%;
