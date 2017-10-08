@@ -4,19 +4,19 @@
 		<div class="man_rank rank_content">
 			男生
 			<ul>
-				<li><router-link to=''><img src="static/img/下载.svg"> 一周热门榜</router-link></li>
-				<li><router-link to=''><img src="static/img/下载.svg"> 当月热门榜</router-link></li>
-				<li><router-link to=''><img src="static/img/下载.svg"> 完结热门榜</router-link></li>
-				<li><router-link to=''><img src="static/img/下载.svg"> 收藏热门榜</router-link></li>
+				<li><router-link to='/rank/ranklist/m_hot'><img src="static/img/下载.svg"> 追书最热榜Top100</router-link></li>
+				<li><router-link to='/rank/ranklist/m_keep'><img src="static/img/下载.svg"> 读者留存率Top100</router-link></li>
+				<li><router-link to='/rank/ranklist/m_end'><img src="static/img/下载.svg"> 完结热门榜Top100</router-link></li>
+				<li><router-link to='/rank/ranklist/m_collection'><img src="static/img/下载.svg"> 收藏热门榜</router-link></li>
 			</ul>
 		</div>
 		<div class="woman_rank rank_content">
 			女生
 			<ul>
-				<li><router-link to=''><img src="static/img/下载.svg"> 一周热门榜</router-link></li>
-				<li><router-link to=''><img src="static/img/下载.svg"> 当月热门榜</router-link></li>
-				<li><router-link to=''><img src="static/img/下载.svg"> 完结热门榜</router-link></li>
-				<li><router-link to=''><img src="static/img/下载.svg"> 收藏热门榜</router-link></li>
+				<li><router-link to='/rank/ranklist/wm_hot'><img src="static/img/下载.svg"> 追书最热榜Top100</router-link></li>
+				<li><router-link to='/rank/ranklist/wm_keep'><img src="static/img/下载.svg"> 读者留存率Top100</router-link></li>
+				<li><router-link to='/rank/ranklist/wm_end'><img src="static/img/下载.svg"> 完结热门榜Top100</router-link></li>
+				<li><router-link to='/rank/ranklist/wm_collection'><img src="static/img/下载.svg"> 收藏热门榜</router-link></li>
 			</ul>
 		</div>
     <bottom index=2></bottom>
