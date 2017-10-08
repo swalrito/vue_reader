@@ -5,9 +5,11 @@
 </template>
 
 <script>
+  import bottom from './components/public/bottom.vue'
 export default {
   name: 'app',
   components:{
+    
   }
 }
 </script>

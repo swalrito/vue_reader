@@ -40,7 +40,7 @@
 			</ul>
 		</div>
 		</div>
-    <bottom></bottom>
+    <bottom index='1'></bottom>
 		
 	</div>
 </template>

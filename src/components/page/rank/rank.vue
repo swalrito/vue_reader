@@ -19,7 +19,7 @@
 				<li><router-link to=''><img src="static/img/下载.svg"> 收藏热门榜</router-link></li>
 			</ul>
 		</div>
-    <bottom></bottom>
+    <bottom index=2></bottom>
 	</div>
 </template>
 

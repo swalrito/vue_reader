@@ -1,19 +1,19 @@
 <template>
 	<div class="bottom">
 		<ul>
-			<li :class="{active:index==0}" @click=changeRouter(0)><router-link to='/'>
+			<li :class="{active:index==0}"><router-link to='/'>
 				<icon name="bookshelf" scale='2.5' ></icon>
 				<p>书架</p>
 			</router-link></li>
-			<li :class="{active:index==1}" @click=changeRouter(1)><router-link to='/sort'>
+			<li :class="{active:index==1}"><router-link to='/sort'>
 				<icon name="sort" scale='2.5' ></icon>
 				<p>分类</p>
 			</router-link></li>
-			<li :class="{active:index==2}" @click=changeRouter(2)><router-link to='/rank'>
+			<li :class="{active:index==2}"><router-link to='/rank'>
 				<icon name="rank" scale='2.5' ></icon>
 				<p>排行榜</p>
 			</router-link></li>
-			<li :class="{active:index==3}" @click=changeRouter(3)><router-link to='search'>
+			<li :class="{active:index==3}"><router-link to='search'>
 				<icon name="search" scale='2.5' ></icon>
 				<p>搜索</p>
 			</router-link></li>
@@ -23,16 +23,7 @@
 
 <script type="text/javascript">
 	export default{
-		data:function(){
-			return{
-				index:0
-			}
-		},
-		methods:{
-			changeRouter(index){
-				this.index=index;
-			}
-		}
+		props:['index']
 	}
 </script>
 

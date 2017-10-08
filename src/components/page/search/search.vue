@@ -22,11 +22,17 @@
 				<li>网游之</li>
 			</ul>
 		</div>
+		<bottom index=3></bottom>
 	</div>
 </template>
 
 <script type="text/javascript">
-	
+	import bottom from '../../public/bottom.vue'
+	export default {
+		components:{
+			bottom
+		}
+	}
 </script>
 
 <style type="text/css">

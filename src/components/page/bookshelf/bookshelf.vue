@@ -24,7 +24,7 @@
 			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
 		</ul>
 		</div>    
-		<bottom></bottom>
+		<bottom index=0></bottom>
 	</div>
 </template>
 
