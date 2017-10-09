@@ -34,6 +34,11 @@ export default new Router({
     	name:'search',
     	path:'/search',
     	component:()=>import('../components/page/search/search.vue')
+    },
+    {
+      name:'book_info',
+      path:'/book_info:id',
+      component:()=>import('../components/page/bookInfo/book_info.vue')
     }
   ]
 })
