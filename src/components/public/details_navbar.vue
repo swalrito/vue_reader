@@ -21,7 +21,8 @@
 		border-bottom: 1px solid #C5C4C4;
 		font-size: 16px;
 		background-color: #fff;
-	}	.nav_bar ul li{
+	}
+		.nav_bar ul li{
 		float: left;
 		margin-left: 0.2rem;
 	}

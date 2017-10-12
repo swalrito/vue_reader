@@ -22,15 +22,23 @@
 				<li>网游之</li>
 			</ul>
 		</div>
+		<component :is="isSearch"></component>
 		<bottom index=3></bottom>
 	</div>
 </template>
 
 <script type="text/javascript">
 	import bottom from '../../public/bottom.vue'
+	import searchIndex from './searchIndex.vue'
 	export default {
+		data:function(){
+			return {
+				isearchIndex:null
+			}
+		},
 		components:{
-			bottom
+			bottom,
+			searchIndex
 		}
 	}
 </script>
