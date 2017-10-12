@@ -1,12 +1,20 @@
 <template>
 	<div class="return">
-		<span><icon name='return' class='return_icon' scale='2.5'></icon>返回</span>
+		<span @click=back><icon name='return' class='return_icon' scale='2.5'></icon>返回</span>
 	</div>
 </template>
 
 <script type="text/javascript">
 	export default{
-		
+		data(){
+			return {
+			}
+		},
+		methods:{
+			back:function(){
+				this.$router.go(-1);
+			}		
+		}
 	}
 </script>
 

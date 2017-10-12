@@ -1,5 +1,5 @@
 <template>
-	<div class="bottom">
+	<div class="bottom" >
 		<ul>
 			<li :class="{active:index==0}"><router-link to='/'>
 				<icon name="bookshelf" scale='2.5' ></icon>
@@ -24,7 +24,7 @@
 <script type="text/javascript">
 	export default{
 		props:['index']
-	}
+		}
 </script>
 
 <style type="text/css" lang='scss'>
