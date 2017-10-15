@@ -1,16 +1,28 @@
 <template>
 	<div class="nav_bar">
 		<ul class="clearfloat">
-			<li class='active'>热门</li>
-			<li>热门</li>
-			<li>热门</li>
-			<li>热门</li>
+			<li 
+			v-for='(item,index) in items' 
+			:class="{active:itemIndex==index}"
+			@click=changeActive(index)>{{item}}</li>
 		</ul>
 	</div>
 </template>
 
 <script type="text/javascript">
-	
+	export default{
+		data(){
+			return {
+				items:['热门','新书','好评','完结'],
+				itemIndex:'0'
+			}
+		},
+		methods:{
+			changeActive(index){
+				this.itemIndex=index;
+			}
+		}
+	}
 </script>
 
 <style type="text/css">
