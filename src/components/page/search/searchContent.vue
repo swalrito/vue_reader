@@ -18,8 +18,7 @@
 		position: absolute;
 		top: 1rem;
 		background-color: #fff;
-		z-index: 5;
-	}
+		}
 	.is_search ul{
 		padding:0 0.6rem 0 0.6rem;
 	}

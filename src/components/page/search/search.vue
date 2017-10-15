@@ -2,7 +2,7 @@
 	<div class="search">
 		<div class="search_input">
 			<icon name='search' scale='2.5' class='search_icon'></icon>
-			<input type="text" name="search">
+			<input type="text" name="search" v-model="searchContent">
 		</div>
 		<div class="search_tags">
 			<ul class="clearfloat">
@@ -18,28 +18,30 @@
 		</div>
 		<div class="search_history">
 			<ul class="clearfloat">
-				<p>搜索历史 <icon name='delet' scale='2.5' class='history_dele'></icon></p>				<li>重生</li>
+				<p>搜索历史 <icon name='delet' scale='2.5' class='history_dele'></icon></p>
+				<li>重生</li>
 				<li>网游之</li>
 			</ul>
 		</div>
-		<component :is="isSearch"></component>
-		<bottom index=3></bottom>
+		<search-content v-if='searchContent'></search-content>
+		<bottom index=3 ></bottom>
 	</div>
 </template>
 
 <script type="text/javascript">
 	import bottom from '../../public/bottom.vue'
-	import searchIndex from './searchIndex.vue'
+	import searchContent from './searchContent.vue'
 	export default {
 		data:function(){
 			return {
-				isearchIndex:null
+				searchContent:''
 			}
 		},
 		components:{
 			bottom,
-			searchIndex
+			searchContent
 		}
+		
 	}
 </script>
 
