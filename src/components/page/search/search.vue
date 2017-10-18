@@ -18,9 +18,17 @@
 		</div>
 		<div class="search_history">
 			<ul class="clearfloat">
-				<p>搜索历史 <icon name='delet' scale='2.5' class='history_dele'></icon></p>
-				<li>重生</li>
-				<li>网游之</li>
+				<p>搜索历史 
+					<span
+					class='history_dele' 
+					@click='deletHistory'>
+					<icon 
+					name='delet' 
+					scale='2.5'>
+					</icon>	
+					</span>
+				</p>
+				<li v-for="item in searchHistory">{{item}}</li>
 			</ul>
 		</div>
 		<search-content v-if='searchContent'></search-content>
@@ -34,12 +42,19 @@
 	export default {
 		data:function(){
 			return {
-				searchContent:''
+				searchContent:'',
+				searchHistory:['重生','网游之']
 			}
 		},
 		components:{
 			bottom,
 			searchContent
+		},
+		methods:{
+			deletHistory:function(){
+				this.searchHistory=[];
+				console.log('1');
+			}
 		}
 		
 	}
