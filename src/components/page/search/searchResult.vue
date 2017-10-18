@@ -1,11 +1,18 @@
 <template>
 	<div class="searchResult">
 		<div class="search_input">
-			<icon name='search' scale='2.5' class='search_icon'></icon>
-			<input type="text" name="search" v-model="searchContent">
+			<icon 
+				name='search' 
+				scale='2.5' 
+				class='search_icon'></icon>
+			<input 
+				type="text" 
+				name="search" 
+				v-model="searchContent">
 		</div>
 		<back></back>
-		<book-details></book-details>
+		<book-details 
+			class='result'></book-details>
 	</div>
 </template>
 
@@ -22,6 +29,9 @@
 
 <style type="text/css">
 	.search_input{
+		position: fixed;
+		top: 0;
+		left: 0;
 		background-color: #A2D9F2;
 		width: 100%;
 		height: 1rem;
@@ -44,5 +54,8 @@
 		text-align: left;
 		padding: 0.02rem;
 		padding-left: 0.7rem;
+	}
+	.result{
+		margin-top: 1rem;
 	}
 </style>
