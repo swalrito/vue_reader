@@ -5,8 +5,8 @@
 		<nav-bar class='first_bar'></nav-bar>
 		<nav-bar></nav-bar>
 		<book-detail></book-detail>
-		<load-more></load-more>
-		<load-over></load-over>
+		<load-more v-if="isLoading"></load-more>
+		<load-over v-if="noMore"></load-over>
 	</div>
 </template>
 
@@ -18,6 +18,12 @@
 	import loadMore from '../../public/loadMore.vue'
 	import loadOver from '../../public/loadOver.vue'
 	export default{
+		data:function(){
+			return {
+				isLoading:false,
+				noMore:true
+			}
+		},
 		components:{
 			top,
 			navBar,
