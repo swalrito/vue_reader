@@ -1,9 +1,10 @@
 <template>
 	<div class="ranklist_navbar">
 		<ul class="clearfloat list">
-			<li class='active'>周榜</li>
-			<li>月榜</li>
-			<li>总榜</li>
+			<li 
+			v-for='(item,index) in navBar'
+			:class="{active:itemIndex==index}"
+			@click="changeIndex(index)">{{item}}</li>
 		</ul>
 		<book-detail></book-detail>
 	</div>
@@ -12,6 +13,17 @@
 <script type="text/javascript">
 	import bookDetail from '../../public/book_detail.vue'
 	export default{
+		data:function(){
+			return {
+				navBar:['周榜','月榜','总榜'],
+				itemIndex:'0'
+			}
+		},
+		methods:{
+			changeIndex:function(index){
+				this.itemIndex=index;
+			}
+		},
 		components:{
 			bookDetail
 		}
