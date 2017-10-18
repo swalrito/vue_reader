@@ -44,6 +44,11 @@ export default new Router({
       name:'book_info',
       path:'/book_info:id',
       component:()=>import('../components/page/bookInfo/book_info.vue')
+    },
+    {
+      name:'book',
+      path:'/book:id',
+      component:()=>import('../components/page/book/book.vue')
     }
   ]
 })
