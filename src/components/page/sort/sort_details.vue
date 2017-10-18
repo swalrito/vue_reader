@@ -5,6 +5,8 @@
 		<nav-bar class='first_bar'></nav-bar>
 		<nav-bar></nav-bar>
 		<book-detail></book-detail>
+		<load-more></load-more>
+		<load-over></load-over>
 	</div>
 </template>
 
@@ -13,12 +15,16 @@
 	import top from '../../public/top.vue'
 	import navBar from '../../public/details_navbar.vue'
 	import bookDetail from '../../public/book_detail.vue'
+	import loadMore from '../../public/loadMore.vue'
+	import loadOver from '../../public/loadOver.vue'
 	export default{
 		components:{
 			top,
 			navBar,
 			bookDetail,
-			back
+			back,
+			loadOver,
+			loadMore
 		}
 	}
 </script>
