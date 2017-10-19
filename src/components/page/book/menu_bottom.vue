@@ -1,5 +1,5 @@
 <template>
-	<div class="menu_bottom">
+	<div class="menu_bottom" v-show='showMenu'>
 		<ul class="clearfloat">
 			<li>
 				<icon 
@@ -19,10 +19,20 @@
 
 <script type="text/javascript">
 	export default{
+		data:function(){
+			return {
+				showMenu:false
+			}
+		},
 		methods:{
 			showCatalog:function(){
 				this.$root.hub.$emit("showCatalog");
 			}
+		},
+		created(){
+			this.$root.hub.$on('showMenu',()=>{
+				this.showMenu=!this.showMenu;
+			})
 		}
 	}
 </script>

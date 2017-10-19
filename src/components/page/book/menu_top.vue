@@ -1,5 +1,5 @@
 <template>
-	<div class="menu_top">
+	<div class="menu_top" v-show='showMenu'>
 		<p>{{book_name}}</p>
 		<back></back>
 	</div>
@@ -8,9 +8,19 @@
 <script type="text/javascript">
 	import back from '../../public/back.vue'
 	export default{
+		data:function(){
+			return {
+				showMenu:false
+			}
+		},
 		props:['book_name'],
 		components:{
 			back
+		},
+		created(){
+			this.$root.hub.$on('showMenu',()=>{
+				this.showMenu=!this.showMenu;
+			})
 		}
 	}
 </script>

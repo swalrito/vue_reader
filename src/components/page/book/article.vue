@@ -1,6 +1,6 @@
 <template>
 	<div class="book">
-		<div class="article" @click='action'>
+		<div class="article" @click='action($event)'>
 			<h2>第1章 他叫白小纯</h2>
 			<br>
 			<p>帽儿山，位于东林山脉中，山下有一个村子，民风淳朴，以耕田为生，与世隔绝。
@@ -31,9 +31,20 @@
 			changeArticle
 		},
 		methods:{
-			action:function(){
+			action:function($event){
 				//隐藏目录catalog组件
 				this.$root.hub.$emit('hideCatalog');
+				//判断点击位置
+				//在中央部位则显示菜单
+				//在顶部或头部则滚动文章
+				const clientHeight=document.body.clientHeight;//客户端高度
+				const eventHeight=$event.clientY;//点击事件发生位置
+				const clientGap=clientHeight/3;
+				if(eventHeight>clientGap&&eventHeight<clientHeight-clientGap)
+				{
+					this.$root.hub.$emit('showMenu');
+				}
+
 			}
 		}
 	}
