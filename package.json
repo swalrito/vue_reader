@@ -14,7 +14,8 @@
     "lib-flexible": "^0.3.2",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
-    "vue-svg-icon": "^1.2.9"
+    "vue-svg-icon": "^1.2.9",
+    "vuex": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

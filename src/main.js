@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import 'lib-flexible'
 import Icon from 'vue-svg-icon/Icon.vue'
+import store from './store/index.js'
 
 Vue.component('icon', Icon);
 Vue.config.productionTip = false
@@ -13,6 +14,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

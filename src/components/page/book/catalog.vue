@@ -35,7 +35,7 @@
 
 <style type="text/css">
 	.catalog{
-		position:absolute;
+		position:fixed;
 		top: 0;
 		left: 0;
 		z-index: 5;
@@ -66,6 +66,8 @@
 		text-align: left;
 	}
 	.catalog ul li{
+		display: block;
+		width: 100%;
 		padding: 0.3rem 0 0.3rem 0.6rem;
 		border-bottom: 1px solid #000;
 	}

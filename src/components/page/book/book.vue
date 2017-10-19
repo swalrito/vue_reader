@@ -1,5 +1,5 @@
 <template>
-	<div class="book">
+	<div class="book" >
 		<menu-top book_name='一念永恒'></menu-top>
 		<article-text></article-text>
 		<catalog></catalog>
