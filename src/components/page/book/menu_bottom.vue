@@ -1,11 +1,17 @@
 <template>
 	<div class="menu_bottom" v-show='showMenu'>
 		<ul class="clearfloat">
-			<li>
+			<li v-show='day' @click='tiggleModel'>
 				<icon 
 					name='night' scale='2'>
 				</icon>
 				<p>夜间模式</p>
+			</li>
+			<li v-show='night' @click='tiggleModel'>
+				<icon 
+					name='day' scale='2'>
+				</icon>
+				<p>白天模式</p>
 			</li>
 			<li @click='showCatalog'>
 				<icon
@@ -21,12 +27,19 @@
 	export default{
 		data:function(){
 			return {
-				showMenu:false
+				showMenu:false,
+				day:true,
+				night:false
 			}
 		},
 		methods:{
 			showCatalog:function(){
 				this.$root.hub.$emit("showCatalog");
+			},
+			tiggleModel:function(){
+				this.day=!this.day;
+				this.night=!this.night;
+				this.$root.hub.$emit("tiggle")
 			}
 		},
 		created(){

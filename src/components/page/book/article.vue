@@ -1,6 +1,6 @@
 <template>
 	<div class="book">
-		<div class="article" @click='action($event)'>
+		<div :class="[article,{day:day},{night:night}]" @click='action($event)'>
 			<h2>第1章 他叫白小纯</h2>
 			<br>
 			<p>帽儿山，位于东林山脉中，山下有一个村子，民风淳朴，以耕田为生，与世隔绝。
@@ -27,6 +27,13 @@
 <script type="text/javascript">
 	import changeArticle from './change_article.vue'
 	export default{
+		data:function(){
+			return {
+				day:true,
+				night:false,
+				article:"article"
+			}
+		},
 		components:{
 			changeArticle
 		},
@@ -40,19 +47,35 @@
 				const clientHeight=document.body.clientHeight;//客户端高度
 				const eventHeight=$event.clientY;//点击事件发生位置
 				const clientGap=clientHeight/3;
+				//显示
 				if(eventHeight>clientGap&&eventHeight<clientHeight-clientGap)
 				{
 					this.$root.hub.$emit('showMenu');
 				}
 
 			}
+		},
+		created(){
+			//切换白天黑夜模式
+			this.$root.hub.$on("tiggle",()=>{
+				this.day=!this.day;
+				this.night=!this.day
+			})
 		}
 	}
 </script>
 
 <style type="text/css">
-	.book{
+	.day{
 		background-color: #D2D1CA;
+	}
+	.night{
+		background-color: #2A2728;
+	}
+	.night p,.night h2{
+		color:#807d7d;
+	}
+	.book{
 		width: 100%;
 		height: 100%;
 		overflow-y: scroll;
