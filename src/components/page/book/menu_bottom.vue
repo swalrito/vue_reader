@@ -7,7 +7,7 @@
 				</icon>
 				<p>夜间模式</p>
 			</li>
-			<li>
+			<li @click='showCatalog'>
 				<icon
 					name='catalog' scale='2'>
 				</icon>
@@ -18,7 +18,13 @@
 </template>
 
 <script type="text/javascript">
-	
+	export default{
+		methods:{
+			showCatalog:function(){
+				this.$root.hub.$emit("showCatalog");
+			}
+		}
+	}
 </script>
 
 <style type="text/css">

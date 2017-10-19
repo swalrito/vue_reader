@@ -16,5 +16,8 @@ new Vue({
   router,
   store,
   template: '<App/>',
+  data:{
+  	hub:new Vue()
+  },
   components: { App }
 })

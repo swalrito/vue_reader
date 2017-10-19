@@ -1,5 +1,5 @@
 <template>
-	<div class="catalog">
+	<div class="catalog" v-show='isShow'>
 		<div class="catalog_top clearfloat">
 			<span class="catalog_name">一念永恒：目录</span>
 			<span class="sort">
@@ -27,8 +27,17 @@
 	export default {
 		data:function (){
 			return {
-				catalog:['第一章','第一章','第一章','第一章','第一章','第一章','第一章','第一章','第一章']
+				catalog:['第一章','第一章','第一章','第一章','第一章','第一章','第一章','第一章','第一章'],
+				isShow:false
 			}
+		},
+		created(){
+			this.$root.hub.$on("showCatalog",()=>{
+				this.isShow=true;
+				});
+			this.$root.hub.$on("hideCatalog",()=>{
+				this.isShow=false;
+			})
 		}
 	}
 </script>

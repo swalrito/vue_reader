@@ -12,7 +12,7 @@
 	import menuTop from './menu_top.vue'
 	import menuBottom from './menu_bottom.vue'
 	import catalog from './catalog.vue'
-		export default {
+	export default {
 		components:{
 			articleText,
 			menuTop,

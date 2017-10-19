@@ -6,7 +6,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state={
-	catalog:false
+	
 }
 
 export default new Vuex.Store({

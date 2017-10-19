@@ -1,6 +1,6 @@
 <template>
 	<div class="book">
-		<div class="article">
+		<div class="article" @click='action'>
 			<h2>第1章 他叫白小纯</h2>
 			<br>
 			<p>帽儿山，位于东林山脉中，山下有一个村子，民风淳朴，以耕田为生，与世隔绝。
@@ -29,6 +29,12 @@
 	export default{
 		components:{
 			changeArticle
+		},
+		methods:{
+			action:function(){
+				//隐藏目录catalog组件
+				this.$root.hub.$emit('hideCatalog');
+			}
 		}
 	}
 </script>
