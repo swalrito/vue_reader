@@ -3,25 +3,19 @@
 		<top name='书架'></top>
 		<div class="books scroll">
 		<ul class="clearfloat">
-			<li class="add"><icon name='add' class='icon' scale='5'></icon></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
-			<li><img src="../../../assets/logo.png" height="200" width="200"></li>
+			<li 
+				class="add">
+				<icon 
+					name='add' 
+					class='icon' 
+					scale='5'>
+					</icon>
+			</li>
+			<li v-for='item in booklist'>
+				<router-link :to="item.src">
+					<img :src="item.imgsrc">
+				</router-link>
+			</li>
 		</ul>
 		</div>    
 		<bottom index=0></bottom>
@@ -32,6 +26,39 @@
 import top from '../../public/top.vue'
 import bottom from '../../public/bottom.vue'
 	export default{
+		data:function(){
+			return {
+				booklist:[{
+				name:"一念永恒",
+				imgsrc:"/static/img/book.jpg",
+				src:'/book&一念永恒'
+			},{
+				name:"一念永恒",
+				imgsrc:"/static/img/book.jpg",
+				src:'/book&一念永恒'
+			},{
+				name:"一念永恒",
+				imgsrc:"/static/img/book.jpg",
+				src:'/book&一念永恒'
+			},{
+				name:"一念永恒",
+				imgsrc:"/static/img/book.jpg",
+				src:'/book&一念永恒'
+			},{
+				name:"一念永恒",
+				imgsrc:"/static/img/book.jpg",
+				src:'/book&一念永恒'
+			},{
+				name:"一念永恒",
+				imgsrc:"/static/img/book.jpg",
+				src:'/book&一念永恒'
+			},{
+				name:"一念永恒",
+				imgsrc:"/static/img/book.jpg",
+				src:'/book&一念永恒'
+			}]
+		}
+		},
 		components:{
 			top,
 			bottom

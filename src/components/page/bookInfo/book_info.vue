@@ -16,7 +16,7 @@
 			</div>
 			<div class="book_action">
 				<span class='action_addUpdate'>追更新</span>
-				<span class='action_addBookShelf'>加入书架</span>
+				<span class='action_read'><router-link to='/book&一念永恒'>开始阅读</router-link></span>
 			</div>
 			<div class="book_data">
 				<div class="book_dataItems">
@@ -91,6 +91,9 @@
 		border:none;
 		margin-left: 0.2rem;
 	}
+	.book_action a{
+		color:#000;
+	}
 	.book_data{
 		margin-top: 0.6rem;
 	}
@@ -127,6 +130,7 @@
 	.book_tags span:nth-child(even){
 		background-color: #3DB4CE;
 	}
+
 	.book_intro{
 		margin: 0.2rem 0.5rem 0.2rem 0.5rem;
 		font-size: 16px;
