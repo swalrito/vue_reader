@@ -3,7 +3,7 @@
 		<top name='分类详情'></top>
 		<back></back>
 		<nav-bar class='first_bar'></nav-bar>
-		<nav-bar></nav-bar>
+		<nav-bar :sort="category"></nav-bar>
 		<book-detail></book-detail>
 		<load-more v-if="isLoading"></load-more>
 		<load-over v-if="noMore"></load-over>
@@ -21,7 +21,8 @@
 		data:function(){
 			return {
 				isLoading:false,
-				noMore:true
+				noMore:true,
+				category:[]
 			}
 		},
 		components:{

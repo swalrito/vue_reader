@@ -17,9 +17,16 @@
 				itemIndex:'0'
 			}
 		},
+		props:['sort'],
 		methods:{
 			changeActive(index){
 				this.itemIndex=index;
+			}
+		},
+		created(){
+			if(this.sort!=undefined){
+				console.log(this.sort);
+				this.items=this.sort;
 			}
 		}
 	}
