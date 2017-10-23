@@ -5,15 +5,18 @@
 		<ul class="clearfloat">
 			<li 
 				class="add">
-				<icon 
+				<router-link to='/sort'>
+					<icon 
 					name='add' 
 					class='icon' 
 					scale='5'>
 					</icon>
+				</router-link>
 			</li>
 			<li v-for='item in booklist'>
 				<router-link :to="item.src">
 					<img :src="item.imgsrc">
+					<span class='bookName'>{{item.name}}</span>
 				</router-link>
 			</li>
 		</ul>
@@ -87,6 +90,7 @@ $color_gray:#C5C4C4;
 	.bookshelf .books ul li{
 		float: left;
 		margin: 0.2rem;
+		margin-bottom: 0.8rem;
 		border: 1px solid $color_gray;
 		text-align: center;
 		width: 2.2rem;
@@ -99,5 +103,10 @@ $color_gray:#C5C4C4;
 		width: 100%;
 		height: 100%;
 		overflow:hidden;
+	}
+	.bookshelf .books ul li .bookName{
+		position: relative;
+		color: #000;
+		font-size: 12px;
 	}
 </style>
